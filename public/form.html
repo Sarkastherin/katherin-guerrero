@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8a3e06b5d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <button type="button" class="btn-light-theme" onclick="toggleTheme()"><i class="fa-solid fa-lightbulb"></i></button>
+    <header>
+      <nav>
+        <div class="logo">
+          <p class="title">Katherin Guerrero</p>
+          <p class="caption">Creación de Herramientas Digitales</p>
+        </div>
+        <button type="button" class="toggle" name="toggle" title="toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-menu nav-menu--hidden">
+          <ul>
+            <li class="nav-menu-link"><a href="#inicio">Inicio</a></li>
+            <li class="nav-menu-link"><a href="">Competencias</a></li>
+            <li class="nav-menu-link"><a href="">Habilidades</a></li>
+            <li class="nav-menu-link"><a href="">Portafolio</a></li>
+            <li class="nav-menu-link"><a href="">Experiencia</a></li>
+          </ul>
+          <button class="btn-call-to-action">Contáctame</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form action="https://formsubmit.co/kathejudith@gmail.com" method="POST" >
+        <input type="text" name="name" placeholder="Nombre">
+        <input type="email" name="email" placeholder="Email">
+        <input type="tel" name="tel" placeholder="Telefono">
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        <button type="submit" name="submit">Enviar</button>
+      </form>
+    </main>
+    <footer class="contact">
+      <div class="sub-title">
+        <h2 class="title-section">Contáctame</h2>
+      </div>
+      <div class="container-contact">
+        <a href="https://api.whatsapp.com/send?phone=543435263931&text=Hola%20Katherin.%20Me%20gustaría%20contactarme%20contigo" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        
+        <a href="mailto:kathejudith@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/katherin-guerrero/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p class="license"><i class="fa-regular fa-copyright"></i> Copyright (c) 2024 Katherin Guerrero</p>
+    </footer>
+    <script src="../src/main.js"></script>
+  </body>
+</html>

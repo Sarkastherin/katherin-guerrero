@@ -1,0 +1,20 @@
+{
+  "name": "katherin-guerrero",
+  "version": "1.0.0",
+  "description": "CV-Digital, carta de presentación, Anlista de procesos",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarkastherin/katherin-guerrero.git"
+  },
+  "keywords": [],
+  "author": "Katherin Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarkastherin/katherin-guerrero/issues"
+  },
+  "homepage": "https://github.com/Sarkastherin/katherin-guerrero#readme"
+}
