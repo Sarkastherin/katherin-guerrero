@@ -10,32 +10,32 @@ const data = [
   {
     title: "Capacidad de Análisis",
     body: "Analizo minuciosamente los procesos empresariales en busca de áreas de mejora, alineándolos a estándares internacionales como ISO 9001, con el objetivo de cumplir con las metas de la organización.",
-    img: "./assets/image/deep-learning.svg"
+    img: "./assets/deep-learning.svg"
   },
   {
     title: "Desarrollo de Mejoras Continuas",
     body: "Implemento procesos de mejora continua, gestinando eficazmente equipos de trabajo para el logro de soluciones eficientes y sostenibles.",
-    img: "./assets/image/mejora-continua.svg"
+    img: "./assets/mejora-continua.svg"
   },
   {
     title: "Planificación Estratégica",
     body: "Diseño planes estratégicos para implementar mejoras coherentes con objetivos organizacionales.",
-    img: "./assets/image/planificacion-estrategica.svg"
+    img: "./assets/planificacion-estrategica.svg"
   },
   {
     title: "Conformidad con Normas Internacionales",
     body: "Experiencia sólida en garantizar el cumplimiento riguroso de normas ISO 9001, asegurando calidad en operaciones.",
-    img: "./assets/image/iso-9001.svg"
+    img: "./assets/iso-9001.svg"
   },
   {
     title: "Optimización Digital",
     body: "Diseño tecnologías innovadoras para digitalizar procesos, mejorando eficiencia y reduciendo costos.",
-    img: "./assets/image/optimizacion-digital.svg"
+    img: "./assets/optimizacion-digital.svg"
   },
   {
     title: "Colaboración Efectiva",
     body: "Facilito la comunicación entre departamentos para una implementación fluida y una cultura centrada en la calidad.",
-    img: "./assets/image/conversation.svg"
+    img: "./assets/conversation.svg"
   },
 ]
 
