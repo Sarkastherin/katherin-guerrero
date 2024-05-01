@@ -14,13 +14,16 @@ body {
 .light-theme {
   background-color: #eae0e0;
 }
+.light-theme * {
+  color: #110313;
+}
 .light-theme nav {
   color: #110313;
 }
 
 .btn-light-theme {
   position: absolute;
-  top: 15px;
+  top: 65px;
   left: 15px;
   font-size: 20px;
   color: rgb(38, 34, 34);
@@ -33,7 +36,7 @@ a {
 }
 
 .sub-title {
-  color: #efaffa;
+  color: #f2cbf9;
   background: linear-gradient(90deg, rgba(118, 73, 127, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
   font-weight: 300;
 }
@@ -48,7 +51,7 @@ a {
 
 .btn-regular, nav .toggle {
   color: #110313;
-  background-color: #efaffa;
+  background-color: #f2cbf9;
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 999px;
@@ -60,20 +63,20 @@ a {
 
 .btn, footer .container-contact form button {
   background: none;
-  border: 1px solid #efaffa;
+  border: 1px solid #f2cbf9;
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 999px;
   font-weight: 600;
-  color: #efaffa;
+  color: #f2cbf9;
 }
 .btn:hover, footer .container-contact form button:hover {
-  background-color: #efaffa;
+  background-color: #f2cbf9;
   color: #110313;
   box-shadow: 0px 0px 10px #76497f;
 }
 .btn--outline {
-  border: 1px solid #efaffa;
+  border: 1px solid #f2cbf9;
 }
 
 nav {
@@ -88,7 +91,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #efaffa;
+  color: #f2cbf9;
 }
 nav .logo {
   text-align: center;
@@ -151,13 +154,17 @@ article .inicio .description {
 article .inicio .description h1 {
   font-size: calc(30px + 10 * (100vw - 320px) / 1120);
   margin-bottom: 2vw;
-  color: #efaffa;
+  color: #f2cbf9;
   font-weight: 400;
+}
+article .inicio .description h2 {
+  color: #f2cbf9;
+  margin-bottom: 2vw;
 }
 article .inicio .description p {
   font-size: calc(16px + 2 * (100vw - 320px) / 1120);
-  line-height: 28px;
-  margin-bottom: 3vw;
+  line-height: 1.8rem;
+  margin-bottom: 2.5vw;
 }
 article .inicio .description a {
   float: inline-end;
@@ -165,7 +172,7 @@ article .inicio .description a {
 }
 
 section {
-  color: #efaffa;
+  color: #f2cbf9;
 }
 section .container-cards {
   max-width: 1240px;
@@ -188,7 +195,7 @@ section .container-cards .card {
 }
 section .container-cards .card .card-header {
   background-color: rgba(204, 208, 207, 0.05);
-  color: #efaffa;
+  color: #f2cbf9;
   padding: 25px;
   display: flex;
   gap: 10px;
@@ -237,7 +244,7 @@ section .container-skills p {
   font-family: "Lobster Two", sans-serif;
   font-size: 16px;
   margin-top: 4px;
-  color: #efaffa;
+  color: #f2cbf9;
 }
 section .container-experience {
   position: relative;
@@ -271,7 +278,7 @@ section .container-experience .timeline {
 }
 section .container-experience .timeline .marker {
   position: absolute;
-  background-color: #efaffa;
+  background-color: #f2cbf9;
   width: 10px;
   height: 10px;
   border-radius: 999px;
@@ -291,11 +298,17 @@ section .container-experience .timeline .timeline-content span {
   color: #b16cbf;
   font-family: "Lobster Two", sans-serif;
 }
+section .container-experience .timeline .timeline-content .date-time {
+  display: block;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
 section .container-experience .timeline .timeline-content p {
   margin-top: 8px;
-  color: rgba(162, 151, 224, 0.8823529412);
+  color: #f2cbf9;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 300;
 }
 section .container-experience .timeline--right {
   float: right;
@@ -337,7 +350,7 @@ footer .container-contact {
   gap: 50px;
 }
 footer .container-contact a {
-  color: #efaffa;
+  color: #f2cbf9;
   padding: 20px;
   border-radius: 999px;
 }
@@ -360,7 +373,7 @@ footer .container-contact form input, footer .container-contact form textarea {
   font-size: 16px;
   background-color: #110313;
   border: #76497f 1px solid;
-  color: #efaffa;
+  color: #f2cbf9;
   border-radius: 5px;
   width: 100%;
 }
@@ -382,7 +395,7 @@ footer .license {
   font-size: 10px;
   font-family: "Courier New", Courier, monospace;
   padding-bottom: 25px;
-  color: #efaffa;
+  color: #f2cbf9;
 }
 
 @media (max-width: 868px) {
