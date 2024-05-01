@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sarkastherin/katherin-guerrero/issues"
   },
-  "homepage": "https://github.com/Sarkastherin/katherin-guerrero#readme"
+  "homepage": "https://github.com/Sarkastherin/katherin-guerrero#readme",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
