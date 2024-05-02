@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://kit.fontawesome.com/8a3e06b5d6.js"
       crossorigin="anonymous"
@@ -19,7 +13,6 @@
     <title>Katherin Guerrero</title>
   </head>
   <body>
-    <button type="button" class="btn-light-theme" onclick="toggleTheme()"><i class="fa-solid fa-lightbulb"></i></button>
     <header>
       <nav>
         <div class="logo">
@@ -31,9 +24,9 @@
         </button>
         <div class="nav-menu nav-menu--hidden">
           <ul>
-            <li class="nav-menu-link"><a href="">Competencias</a></li>
-            <li class="nav-menu-link"><a href="">Habilidades</a></li>
-            <li class="nav-menu-link"><a href="">Experiencia</a></li>
+            <li class="nav-menu-link"><a href="#competencias">Competencias</a></li>
+            <li class="nav-menu-link"><a href="#herraminetas">Habilidades</a></li>
+            <li class="nav-menu-link"><a href="#experiencia">Experiencia</a></li>
           </ul>
           <a href="#contact" class="btn-regular">Contáctame</a>
         </div>
@@ -43,21 +36,16 @@
       <article>
         <div class="inicio" id="inicio">
           <div class="image">
-            <img src="./assets/image/Img-portada.svg" alt="" />
+            <img src="./assets/img-cover.svg" alt="" />
           </div>
           <div class="description">
             <h1>¡Hola! mi nombre es Katherin</h1>
+            <h2>Analizo y Optimizo Procesos Productivos</h2>
             <p>
-              y me desempeño como
-              <span class="resalt-text">analísta de procesos</span> con enfoque
-              en normas ISO 9001 para garantizar calidad en productos y
-              operaciones.
+              Con una sólida experiencia en la implementación de <strong>Sistemas de Gestión de Calidad</strong> (SGC) conforme a la norma <strong>ISO 9001:2015</strong>, me dedico a garantizar la excelencia y el cumplimiento de los requisitos de productos y servicios. Mi enfoque analítico y mi compromiso con la calidad me permiten <strong>identificar oportunidades de mejora</strong> continua, asegurando procesos eficientes y resultados confiables.
             </p>
             <p>
-              Con habilidad para optimizar procesos mediante planes
-              estratégicos. Destaco en el desarrollo de aplicaciones web que
-              mejoran la eficiencia en la recolección de datos, ofreciendo
-              soluciones tecnológicas integradas para impulsar resultados.
+              Además, soy una apasionada <strong>desarrolladora de aplicaciones web</strong>, me he desenvuelto en la creación de soluciones tecnológicas que mejoran la eficiencia en la recolección de datos. Mis aplicativos están diseñados para <strong>integrarse con Google Sheets</strong>, lo que permite una gestión ágil y familiar de planillas al estilo Excel, una ventaja significativa para muchas empresas, que ya implementan esta herramienta en su día a día.
             </p>
             <a href="mailto:kathejudith@gmail.com" class="btn-regular" title="sendme_a_message">Escríbeme</a>
           </div>
@@ -74,74 +62,77 @@
         </div>
       </section>
       <section>
-        <div class="herramientas">
+        <div class="herramientas" id="herraminetas">
           <div class="sub-title">
             <h2 class="title-section">Mis Herramientas</h2>
           </div>
           <div class="container-skills">
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/docs.png" alt="">
+              <img src="./assets/icon-skills/docs.png" alt="">
               <p>Docs</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/sheet.png" alt="">
+              <img src="./assets/icon-skills/sheet.png" alt="">
               <p>Sheet</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/form.png" alt="">
+              <img src="./assets/icon-skills/form.png" alt="">
               <p>Form</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/slide.png" alt="">
+              <img src="./assets/icon-skills/slide.png" alt="">
               <p>Slide</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/diagrams.png" alt="">
+              <img src="./assets/icon-skills/diagrams.png" alt="">
               <p>Diagrams</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/looker.png" alt="">
+              <img src="./assets/icon-skills/looker.png" alt="">
               <p>Looker</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/figma.png" alt="">
+              <img src="./assets/icon-skills/figma.png" alt="">
               <p>Figma</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/notion.png" alt="">
+              <img src="./assets/icon-skills/notion.png" alt="">
               <p>Notion</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/github.png" alt="">
+              <img src="./assets/icon-skills/github.png" alt="">
               <p>GitHub</p>
             </div>
             <div class="item-skill">
-              <img src="./assets/image/icon-skills/javascript.png" alt="">
+              <img src="./assets/icon-skills/javascript.png" alt="">
               <p>JavaScript</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="experiencia">
+      <section class="experiencia" id="experiencia">
         <div class="sub-title">
           <h2 class="title-section">Experiencias y Educación</h2>
         </div>
         <div class="container-experience">
-          <div class="timeline timeline--right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-              <h3>2021 - Actualidad</h3>
-              <span>Analista de Calidad y Sistemas</span>
-              <p>En Septiembre de 2021 obtuve mi primer trabajo formal en Argentina. Ingrese a una Metalurgíca. Acá he aprendido muchisimo sobre las normas ISO 9001, a la par que he puesto en practica las habilidades en Desarrollo Web. He llevado a cabo diversas implementaciones con herramientas digitales que facilitan la recolección y lectura de los datos.</p>
-            </div>
-          </div>
           <div class="timeline timeline--left">
             <div class="marker"></div>
             <div class="timeline-content">
-              <h3>2019 - 2021</h3>
-              <span>Estudios de Programación Web</span>
-              <p>Emigré a Argentina a finales del 2018, y comencé nuevos rumbos. Resulta que mis habilidades en resolución de problemas son muy efectivas en la programación <br>
-                Inicié diversos cursos y prácticas en Desarrollo Web.
+              <h3>2019 - Actualidad</h3>
+              <span>Analista de Calidad y Sistemas</span>
+              <span class="date-time">Septiembre 2021 - Actualidad</span>
+              <p>
+                En mi actual puesto, he contribuido al <strong>Sistema de Gestión de Calidad</strong> según <strong>ISO 9001:2015</strong>, mejorando la calidad y eficiencia de los procesos llevado a cabo auditorías internas, según la norma, para asegurar la mejora continua. He gestionado soluciones informáticas para optimizar operaciones en varios departamentos  Además, he estado a cargo de la implementación de nuevas tecnologías, participando en la <strong>migración de datos</strong> y capacitaciones del personal.
+              </p>
+              <span>Estudios en Desarrollo Web</span>
+              <span class="date-time">Mayo 2019 - Actualidad</span>
+              <p>
+                Durante un período de transición profesional, me dediqué al estudio del desarrollo web. Adquirí habilidades prácticas en maquetación web, utilizando <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> para construir sitios web responsivos y atractivos. Profundicé en la <strong>programación orientada a objetos</strong>, lo que me permitió desarrollar aplicaciones más estructuradas y eficientes.
+              </p>
+              <p>
+                En el diseño de interfaces, utilicé Figma para crear prototipos funcionales, enfocándome en la usabilidad y la experiencia del usuario. Además, inicié estudios en <strong>ReactJs</strong>, aprendiendo a construir componentes dinámicos y modernos para aplicaciones web.
+                <br>
+                Este periodo de autoformación me permitió actualizar y expandir mi conjunto de habilidades técnicas.
               </p>
             </div>
           </div>
@@ -150,8 +141,8 @@
             <div class="timeline-content">
               <h3>2018 - 2011</h3>
               <span>Experiencia laboral en Obras civiles</span>
-              <p>Luego de egresar de la universidad, entré al mundo laboral, al mundo de las obras civiles. <br>
-                Trabajé en diversas áreas de la construcción: Revisión y Auditorias de contratos estatales. Estuve en un gran grupo de supervisión e inspección en la contruscción de grandes infraestructuras.                 <br>Estuve como dibujante proyectista para un gran proyecto de Energia Eléctrica. En ese mismo proyecto tuve la oportunidad de desenvolverme como planificadora, de aquí parte un poco las herramientas que adquirí en gestión de proyectos.
+              <p>
+                Mi experiencia en construcción civil incluye inspección de obras, consultoría en licitaciones y gestión de proyectos de energía. Destaqué en la <strong>Inspección de Obras para el Metro de Caracas</strong>, supervisando obras, mediciones y personal. Como <strong>Analista y Dibujante Proyectista</strong>, participé en la expansión de subestaciones y líneas de transmisión, manejando AutoCAD y documentación. En <strong>Licitaciones y Construcción de Drywall</strong>, preparé propuestas para NY y LA, cumpliendo con regulaciones estatales y sindicales. Estas labores me han dotado de habilidades en gestión, diseño técnico y comunicación.
               </p>
             </div>
           </div>
@@ -160,13 +151,15 @@
             <div class="timeline-content">
               <h3>2011 - 2007</h3>
               <span>Carrera Universitaria en TSU Construcción Civil</span>
-              <p>Estudié en la Universidad Nacional Experimental "Antonio José de Sucre" - Charallave, Venezuela. <br>
-                A los 20 años obtive el titulo en Técnico Superior Universitario en Construcción Civil</p>
+              <p>
+                Mi paso por la universidad fue una etapa de crecimiento y aprendizaje que culminó con la obtención de mi título de <strong>Técnico Superior Universitario en Construcción Civil</strong>
+                <br>
+                Desarrolle las habilidades de innovación y resolución de problemas que aplico. Aprendí a analizar desafíos, crear soluciones efectivas y liderar proyectos con una base sólida en colaboración y ética laboral. Este período fue esencial para mi crecimiento profesional y mi capacidad para contribuir al avance de la industria.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      
     </main>
     <footer class="contact" id="contact">
       <div class="sub-title">
@@ -176,18 +169,23 @@
 
       
       <div class="links">
-        <a href="https://api.whatsapp.com/send?phone=543435263931&text=Hola%20Katherin.%20Me%20gustaría%20contactarme%20contigo" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        
-        <a href="mailto:kathejudith@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/katherin-guerrero/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="button-icon">
+          <a href="https://api.whatsapp.com/send?phone=543435263931&text=Hola%20Katherin.%20Me%20gustaría%20contactarme%20contigo" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="button-icon">
+          <a href="mailto:kathejudith@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <div class="button-icon">
+          <a href="https://www.linkedin.com/in/katherin-guerrero/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
       <form action="https://formsubmit.co/kathejudith@gmail.com" method="POST" >
         <input type="text" name="name" placeholder="Nombre">
         <input type="email" name="email" placeholder="Email">
         <input type="tel" name="tel" placeholder="Telefono">
         <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Mensaje"></textarea>
-        <button class="btn-form" type="submit" name="submit">Enviar</button>
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/">
+        <button class="btn-regular" type="submit" name="submit">Enviar</button>
+        <input type="hidden" name="_next" value="https://sarkastherin.github.io/katherin-guerrero/thanks.htmll">
         <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
