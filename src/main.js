@@ -9,7 +9,7 @@ function toggleTheme() {
 const data = [
   {
     title: "Capacidad de Análisis",
-    body: "Analizo minuciosamente los procesos empresariales en busca de áreas de mejora, alineándolos a estándares internacionales como ISO 9001, con el objetivo de cumplir con las metas de la organización.",
+    body: "Analizo los procesos empresariales en busca de áreas de mejora, alineándolos a estándares internacionales como ISO 9001, con el objetivo de cumplir con las metas de la organización.",
     img: "./assets/deep-learning.svg"
   },
   {

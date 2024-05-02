@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-$primary-color: #110313;
-$secondary-color: #76497f;
-$primary-font: #f2cbf9;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Ruda:wght@400..900&display=swap");
+$background: #eae0e0;
+$primary-color: #ea5d3e;
+$primary-font: #605d5d;
+
 $secondary-font: #c4b9ff;
-$transparency: rgb(204, 208, 207, 5%);
+$transparency: hsla(11, 80%, 58%, 0.3);
 
 $logo-primary-font: calc(18px + (26 - 18) * ((100vw - 320px) / (1440 - 320)));
 $logo-secondary-font: calc(14px + (18 - 14) * ((100vw - 320px) / (1440 - 320)));
@@ -16,7 +16,7 @@ $medium-font: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
   justify-content: $justify;
   align-items: $align;
 }
-@mixin layout ($p-top: 10vw, $p-bottom: 10vw){
+@mixin layout($p-top: 10vw, $p-bottom: 10vw) {
   max-width: 1240px;
   margin: auto;
   padding-top: $p-top;
@@ -31,24 +31,8 @@ $medium-font: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
   font-family: "Lato", sans-serif;
 }
 body {
-  background-color: $primary-color;
-}
-.light-theme {
-  background-color: #eae0e0;
-  * {
-    color: $primary-color;
-  }
-  nav {
-    color: $primary-color;
-  }
-}
-.btn-light-theme {
-  position: absolute;
-  top: 65px;
-  left: 15px;
-  font-size: 20px;
-  color: rgb(38, 34, 34);
-  padding: 5px;
+  background-color: $background;
+  color: $primary-font;
 }
 a {
   color: currentColor;
@@ -56,61 +40,40 @@ a {
 }
 .sub-title {
   color: $primary-font;
-  background: linear-gradient(
-    90deg,
-    rgb(118, 73, 127, 48%) 0%,
-    rgb(0, 0, 0, 0%) 100%
-  );
+  background: linear-gradient(90deg, #ea5d3e 0%, rgb(0, 0, 0, 0%) 100%);
   font-weight: 300;
   h2 {
-    font-family: "Julius Sans One", sans-serif;
+    font-family: "Ruda", sans-serif;
     text-transform: uppercase;
     max-width: 1400px;
     margin: auto;
-    font-weight: 300;
     padding: 10px;
+    color: $background;
   }
 }
 .btn-regular {
-  color: $primary-color;
-  background-color: $primary-font;
+  color: $background;
+  background-color: $primary-color;
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 999px;
   font-weight: 600;
+  transition: 0.3s all;
   &:hover {
-    box-shadow: 0px 0px 20px $secondary-color;
-  }
-}
-.btn {
-  background: none;
-  border: 1px solid $primary-font;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-weight: 600;
-  color: $primary-font;
-  &:hover {
-    background-color: $primary-font;
-    color: $primary-color;
-    box-shadow: 0px 0px 10px $secondary-color
-  }
-  &--outline {
-    border: 1px solid $primary-font;
+    box-shadow: 0px 0px 10px $primary-color;
   }
 }
 
 nav {
   @include layout(30px, 30px);
-  border-bottom: $secondary-color 0.5px solid;
-  @include flex($direction: row,$justify: space-between, $align: center);
-  color: $primary-font;
+  @include flex($direction: row, $justify: space-between, $align: center);
+  color: $primary-color;
   .logo {
     text-align: center;
     .title {
       font-size: $logo-primary-font;
       text-transform: uppercase;
-      font-family: "Julius Sans One", sans-serif;
+      font-family: "Ruda", sans-serif;
     }
     .caption {
       font-family: "Lobster Two", sans-serif;
@@ -138,7 +101,6 @@ nav {
 }
 article {
   @include layout();
-  color: $secondary-font;
   .inicio {
     @include flex($justify: center, $align: center);
 
@@ -154,17 +116,19 @@ article {
       h1 {
         font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1440 - 320)));
         margin-bottom: 2vw;
-        color: $primary-font;
+        color: $primary-color;
         font-weight: 400;
       }
       h2 {
-        color: $primary-font;
-        margin-bottom: 2vw;
+        margin-bottom: 10px;
       }
       p {
         font-size: $medium-font;
-        line-height: 1.8rem;
+        line-height: 28px;
         margin-bottom: 2.5vw;
+        strong {
+          color: $primary-color;
+        }
       }
       a {
         float: inline-end;
@@ -174,36 +138,34 @@ article {
   }
 }
 section {
-  color: $primary-font;
-  
   .container-cards {
     @include layout(8vw, 8vw);
-    @include flex($justify: space-evenly, $align: center);
+    @include flex($justify: space-evenly, $align: stretch);
     flex-wrap: wrap;
     gap: 30px;
     .card {
-      max-width: 290px;
-      height: 335px;
-      border: #76497f73 1px solid;
+      width: 230px;
+      height: auto;
+      border: $primary-color 1px solid;
+      border-radius: 10px;
       .card-header {
         background-color: $transparency;
-        color: $primary-font;
-        padding: 25px;
+        color: $primary-color;
+        padding: 15px;
         display: flex;
-        gap: 10px;
+        gap: 8px;
         align-items: center;
+        border-radius: 10px;
         img {
-          width: 100px;
+          width: 80px;
         }
         h3 {
-          font-size: 18px;
-          font-weight: 300;
+          font-size: 16px;
         }
       }
       .card-body {
-        padding: 25px;
-        font-size: 16px;
-        color: $secondary-font;
+        padding: 15px;
+        font-size: 14px;
       }
     }
   }
@@ -213,8 +175,8 @@ section {
     flex-wrap: wrap;
     gap: 3vw;
     .item-skill {
-      @include flex($direction: column, $justify: center, $align: center );
-      background-color: rgb(140, 133, 201, 19%);
+      @include flex($direction: column, $justify: center, $align: center);
+      background-color: $transparency;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -227,7 +189,7 @@ section {
       font-family: "Lobster Two", sans-serif;
       font-size: 16px;
       margin-top: 4px;
-      color: $primary-font;
+      color: $primary-color;
     }
   }
   .container-experience {
@@ -235,15 +197,15 @@ section {
     @include layout();
     margin: 50px auto;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 50%;
       margin-left: -1px;
       width: 2px;
       height: 100%;
-      background-color: $secondary-color;
-      z-index: 1
+      background-color: $primary-color;
+      z-index: 1;
     }
     .timeline {
       width: 50%;
@@ -263,26 +225,27 @@ section {
         width: 100%;
         h3 {
           font-size: 20px;
-          font-weight: 400;
-          color: $secondary-font;
+          font-weight: 700;
           margin-bottom: 12px;
+          
         }
         span {
           font-size: 19px;
-          color: #b16cbf;
           font-family: "Lobster Two", sans-serif;
+          color: $primary-color;
+          display: block;
+          margin-top: 15px;
         }
         .date-time {
-          display: block;
+          font-family: "Lato" , sans-serif;
           font-size: 14px;
-          font-family: "Lato", sans-serif;
+          display: block;
+          margin-top: 4px;
         }
         p {
           margin-top: 8px;
-          color: $primary-font;
           font-size: 16px;
           line-height: 20px;
-          font-weight: 300;
         }
       }
       &--right {
@@ -292,7 +255,6 @@ section {
         }
         .timeline-content {
           margin-inline-start: 15px;
-         
         }
       }
       &--left {
@@ -304,7 +266,7 @@ section {
         .timeline-content {
           margin-inline-end: 15px;
           &--right {
-            float:left;
+            float: left;
           }
         }
       }
@@ -312,59 +274,69 @@ section {
   }
 }
 footer {
-  background-color: $transparency;
-  
+  background-color: $primary-color;
+  color: $background;
   .container-contact {
     @include layout(50px, 70px);
     @include flex($justify: center, $align: center);
     gap: 50px;
-    a {
-      color: $primary-font;
-      padding: 20px;
+    .button-icon {
+      @include flex($justify: center,$align: center );
+      width: 60px;
+      height: 60px;
       border-radius: 999px;
+      border: none 1px solid;
+      a {
+        color: $background;
+      }
       &:hover {
-        color: $primary-color
+        box-shadow: 0px 0px 10px $background;
+      }
+      i {
+        font-size: 35px;
       }
     }
-    i {
-      font-size: 35px;
-    }
+
     form {
       order: 2;
       @include flex($direction: column, $align: start);
       gap: 15px;
       width: 50%;
-      input, textarea {
+      input,
+      textarea {
         padding: 10px 15px;
         font-size: 16px;
-        background-color: $primary-color;
-        border: $secondary-color 1px solid;
-        color: $primary-font;
+        background-color:#f38f79;
+        border: $background 1px solid;
         border-radius: 5px;
         width: 100%;
         &::placeholder {
-          color: $secondary-color;
+          color: $background;
           font-family: "Lato";
         }
         &:focus {
-          outline: $secondary-color 2px solid;
+          outline: $background 2px solid;
         }
       }
       button {
-        @extend .btn;
-        background-color: $primary-color;
+        background-color: $background;
         margin-right: 0;
         margin-left: auto;
         cursor: pointer;
+        color: $primary-color;
+        border: none;
+        &:hover {
+          box-shadow: 0px 0px 10px 5px hsl(0, 19%, 90%, 50%);
+          scale: 1.05;
+        }
       }
     }
   }
   .license {
     text-align: center;
     font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     padding-bottom: 25px;
-    color: $primary-font;
   }
 }
 @media (max-width: 868px) {
@@ -409,7 +381,6 @@ footer {
           float: none;
         }
       }
-      
     }
   }
 }
@@ -436,7 +407,7 @@ footer {
           .timeline-content {
             margin-inline-start: 15px;
             &--right {
-              float:right;
+              float: right;
             }
           }
         }
@@ -456,6 +427,10 @@ footer {
         order: 1;
         width: 100%;
         @include flex($direction: column, $align: center);
+        button {
+          margin-right: auto;
+        }
+      
       }
     }
   }
@@ -480,4 +455,3 @@ footer {
     padding-top: 20px;
   }
 }
-
